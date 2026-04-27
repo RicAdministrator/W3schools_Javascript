@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: solid 1px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The ** Operator</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Expression</th>
+                <th>Solution</th>
+                <th>JS Expression</th>
+                <th>JS Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    5<sup>2</sup>
+                </td>
+                <td>
+                    5 * 5 = 25
+                </td>
+                <td>
+                    5 ** 2
+                </td>
+                <td id="tdRes1"></td>
+            </tr>
+            <tr>
+                <td>
+                    5<sup>3</sup>
+                </td>
+                <td>
+                    5 * 5 * 5 = 125
+                </td>
+                <td>
+                    5 ** 3
+                </td>
+                <td id="tdRes2"></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+    Note: x ** y produces the same result as Math.pow(x, y)
+
+    <script>
+        let x1 = 5;
+        let z1 = x1 ** 2;
+        document.getElementById("tdRes1").innerHTML = z1;
+
+        let x2 = 5;
+        let z2 = x2 ** 3;
+        document.getElementById("tdRes2").innerHTML = z2;
+    </script>
+
+</body>
+
+</html>

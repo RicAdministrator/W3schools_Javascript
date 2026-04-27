@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Functions</h1>
+    <h2>The Arrow Function</h2>
+
+    <p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // Before arrow
+        // const multiply = function(a, b) {return a * b};
+
+        const multiply = (a, b) => a * b;
+        let result = multiply(4, 5);
+        document.getElementById("demo").innerHTML = "The product is: " + result;
+
+    </script>
+
+</body>
+
+</html>

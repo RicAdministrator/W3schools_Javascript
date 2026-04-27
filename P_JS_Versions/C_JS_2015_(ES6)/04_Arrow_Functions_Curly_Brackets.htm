@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Arrow Functions</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        // You can only omit the return keyword and the curly brackets if the function is a single statement. 
+        // Because of this, it might be a good habit to always keep them:
+        const multiply = (x, y) => { return x * y };
+
+        let result = multiply(5, 4);
+        document.getElementById("demo").innerHTML = "The product is: " + result;
+    </script>
+
+</body>
+
+</html>

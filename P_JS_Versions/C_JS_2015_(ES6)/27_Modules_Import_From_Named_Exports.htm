@@ -1,0 +1,22 @@
+<!-- E:\Git\W3schools_Javascript\P_JS_Versions\C_JS_2015_(ES6)> python -m http.server -->
+<!-- http://localhost:8000/27_Modules_Import_From_Named_Exports.htm -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Modules</h1>
+
+    <p id="demo"></p>
+
+    <script type="module">
+        import { name, age } from "./27_Person_Named_Exports.js";
+
+        let text = "My name is " + name + ", I am " + age + ".";
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

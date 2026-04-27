@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>JavaScript Operators</h1>
+  <h2>Object Destructuring</h2>
+
+  <p id="demo"></p>
+
+  <script>
+    // Create an Object
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 50,
+      eyeColor: "blue"
+    };
+
+    // Destructuring Assignment
+    // When destructuring an object, you must use the same name for the variables as the corresponding object keys (names).
+    // The order of the keys (names) does not matter.
+    let { firstName, age } = person;
+
+    // Display Data
+    document.getElementById("demo").innerHTML =
+      firstName + " is " + age + " years old.";
+  </script>
+
+</body>
+
+</html>
